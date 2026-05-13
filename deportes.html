@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Deportes</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="img/escudo_favicon.png">
+</head>
+
+<body>
+
+<header>
+<h1>Deportes</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="deportes.html">Deportes</a></li>
+<li><a href="jugador.html">Jugador</a></li>
+</ul>
+</nav>
+
+<!-- FUTBOL -->
+<section>
+<h2>Fútbol</h2>
+
+<h3>Partido Atlético de Madrid vs Barcelona</h3>
+<p>
+El Atlético salió muy fuerte desde el inicio, presionando alto y dominando el partido.
+En la primera parte logró adelantarse y en la segunda supo defender el resultado.
+Finalmente ganó el partido demostrando su carácter competitivo.
+</p>
+
+<h3>Fernando Torres y Mundial 2010</h3>
+<p>
+Fernando Torres fue uno de los jugadores importantes de la selección española que ganó el Mundial de 2010.
+Aunque no estuvo en su mejor momento físico, formó parte de un equipo histórico.
+</p>
+
+<a href="https://es.wikipedia.org/wiki/Fernando_Torres" target="_blank">
+    <img src="img/torres_mundial.png" width="250">
+</a>
+
+<h3>Mundial 2010</h3>
+<table>
+<tr><th>Fase</th><th>Rival</th><th>Resultado</th></tr>
+<tr><td>Final</td><td>Holanda</td><td>1-0</td></tr>
+<tr><td>Semifinal</td><td>Alemania</td><td>1-0</td></tr>
+<tr><td>Cuartos</td><td>Paraguay</td><td>1-0</td></tr>
+<tr><td>Octavos</td><td>Portugal</td><td>1-0</td></tr>
+</table>
+
+<h3>Gol de la final del Mundial 2010</h3>
+
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/TkvgqQxpUG4?si=97ekOzBRshaCXNJ4" 
+title="Gol de Iniesta" 
+frameborder="0" 
+allowfullscreen>
+</iframe>
+
+</section>
+
+<!-- FORMULA 1 -->
+<section>
+<h2>Fórmula 1</h2>
+
+<p>Mi piloto favorito es Fernando Alonso y mi equipo favorito es Red Bull.</p>
+
+<a href="https://es.wikipedia.org/wiki/Red_Bull_Racing" target="_blank">
+<img src="img/redbull_f1.png" width="300">
+</a>
+
+<h3>Pilotos destacados</h3>
+<ul>
+<li>Fernando Alonso</li>
+<li>Max Verstappen</li>
+<li>Lewis Hamilton</li>
+</ul>
+
+<h3>Clasificación</h3>
+<table>
+<tr><th>Piloto</th><th>Puntos</th></tr>
+<tr><td>Verstappen</td><td>120</td></tr>
+<tr><td>Alonso</td><td>95</td></tr>
+<tr><td>Hamilton</td><td>80</td></tr>
+</table>
+
+<button onclick="mostrarF1()">Curiosidad</button>
+<p id="datoF1" style="display:none;">Los coches de Fórmula 1 superan los 300 km/h.</p>
+
+</section>
+
+<!-- FORMULARIO -->
+<section>
+<h2>Predicción deportiva</h2>
+
+<form onsubmit="validarFormulario(event)">
+
+<input type="text" id="nombre" placeholder="Nombre" required><br><br>
+
+<input type="email" id="email" placeholder="Email" required><br><br>
+
+<select id="equipo" required>
+<option value="">Selecciona equipo</option>
+<option>Atlético</option>
+<option>Barcelona</option>
+<option>PSG</option>
+</select><br><br>
+
+<textarea placeholder="Tu opinión..."></textarea><br><br>
+
+<button type="submit">Enviar</button>
+<button type="reset">Borrar</button>
+
+</form>
+
+<p id="mensaje"></p>
+
+</section>
+
+<div style="text-align:center;">
+<button onclick="volverInicio()">Volver</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

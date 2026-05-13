@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Web de Diego</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="img/escudo_favicon.png">
+</head>
+
+<body>
+
+<header>
+<h1>Bienvenido a mi web deportiva</h1>
+<p>Soy Diego y te voy a mostrar mis gustos sobre el deporte</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="deportes.html">Deportes</a></li>
+<li><a href="jugador.html">Jugador</a></li>
+</ul>
+</nav>
+
+<section>
+<h2>Sobre mí</h2>
+<p>Me llamo Diego y soy un apasionado del deporte, especialmente del fútbol y la Fórmula 1.</p>
+<img src="img/atleti.jpg" width="300" alt="Foto equipo favorito">
+</section>
+
+<section>
+
+<h2>Audio de presentación</h2>
+
+<p>En este audio explico mi web y mis gustos deportivos.</p>
+
+<audio controls>
+    <source src="audio/mividayaficiones.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+</section>
+
+<section>
+<h2>Mi equipo</h2>
+<p>Soy del Atlético de Madrid porque desde pequeño me han gustado sus valores. No es solo ganar títulos, es sentir cada partido.</p>
+
+<button onclick="mostrarAtleti()">Mostrar más</button>
+<p id="textoAtleti" style="display:none;">
+El Atlético representa lucha, esfuerzo y nunca rendirse, algo que me gusta mucho de este equipo.
+</p>
+</section>
+
+<!-- TABLA -->
+<section>
+<h2>Equipos históricos de Champions</h2>
+<table>
+<tr><th>Equipo</th><th>Títulos</th></tr>
+<tr><td>Real Madrid</td><td>14</td></tr>
+<tr><td>Milan</td><td>7</td></tr>
+<tr><td>Bayern</td><td>6</td></tr>
+</table>
+</section>
+
+<!-- ENLACES CON IMÁGENES -->
+<section>
+<h2>Competiciones</h2>
+
+<p>Pulsa las imágenes para visitar sus páginas oficiales:</p>
+
+<a href="https://www.uefa.com/uefachampionsleague/" target="_blank">
+<img src="img/griezmann_champions.png" width="200" alt="Champions">
+</a>
+
+<a href="https://www.formula1.com/" target="_blank">
+<img src="img/formula1.png" width="200" alt="F1">
+</a>
+
+</section>
+
+<!-- IMAGEN CREADA -->
+<section>
+<h2>Imagen personalizada</h2>
+
+<img src="img/ElniñoTorres.png" width="250" alt="Niño Torres">
+</a>
+</section>
+
+<!-- BOTÓN COLOR -->
+<section>
+<h2>Personalizar fondo</h2>
+<button onclick="cambiarColor()">Cambiar color</button>
+</section>
+
+<!-- GEOLOCALIZACIÓN -->
+<section>
+<h2>Geolocalización</h2>
+<button onclick="obtenerUbicacion()">Ver ubicación</button>
+<p id="ubicacion"></p>
+</section>
+
+<section>
+<h2>Mapa</h2>
+
+<p>Pulsa para ver el mapa interactivo:</p>
+
+<button onclick="window.location.href='mapa.html'">
+Ver mapa
+</button>
+</section>
+
+
+<div style="text-align:center;">
+<button onclick="irDeportes()">Ir a deportes</button>
+</div>
+
+<div style="text-align:center;">
+<button onclick="irJugador()">Ir a jugador</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

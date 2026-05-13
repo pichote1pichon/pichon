@@ -1,0 +1,102 @@
+body {
+font-family: Arial;
+background-color: #f4f4f4;
+animation: aparecer 1s;
+}
+
+@keyframes aparecer {
+from {opacity:0;}
+to {opacity:1;}
+}
+
+header {
+background: darkred;
+color: white;
+text-align: center;
+padding: 15px;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+background: black;
+list-style: none;
+}
+
+nav ul li {
+margin: 10px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+section {
+background: white;
+margin: 10px;
+padding: 15px;
+border-radius: 10px;
+}
+
+/* TABLA */
+table {
+border-collapse: collapse;
+width: 60%;
+margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+audio {
+display: block;
+margin: auto;
+margin-top: 15px;
+}
+
+th {
+background: crimson;
+color: white;
+}
+
+td, th {
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+
+/* BOTONES */
+button {
+background: crimson;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+transform: scale(1.1);
+}
+
+/* IMÁGENES */
+img {
+display: block;
+margin: auto;
+transition: 0.3s;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+nav ul {
+flex-direction: column;
+}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Mapa</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="img/favicon.png">
+
+<style>
+
+gmp-map {
+height: 500px;
+width: 90%;
+margin: auto;
+display: block;
+border-radius: 10px;
+}
+
+</style>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?loading=async&key=AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8&libraries=maps,marker">
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Mapa y ubicación</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="deportes.html">Deportes</a></li>
+<li><a href="mapa.html">Mapa</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h2>Ubicación en Palencia</h2>
+
+<p>
+Este mapa muestra una localización usando Google Maps.
+</p>
+
+<gmp-map
+center="42.0121878,-4.5269743"
+zoom="13"
+map-id="DEMO_MAP_ID">
+
+<gmp-advanced-marker
+position="42.0121878,-4.5269743"
+title="Palencia">
+</gmp-advanced-marker>
+
+</gmp-map>
+
+</section>
+
+<div style="text-align:center; margin-top:20px;">
+<button onclick="window.location.href='index.html'">
+Volver al inicio
+</button>
+</div>
+
+</body>
+</html>
